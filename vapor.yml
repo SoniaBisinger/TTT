@@ -1,0 +1,7 @@
+id: 49201
+name: TTT
+environments:
+    production:
+        runtime: 'php-8.2:al2'
+        build:
+            - 'composer install --no-dev'
