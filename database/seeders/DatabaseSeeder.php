@@ -1,9 +1,11 @@
 <?php
 
 namespace Database\Seeders;
+namespace Illuminate\Support\Facades\Http;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Http;
 
 class DatabaseSeeder extends Seeder
 {

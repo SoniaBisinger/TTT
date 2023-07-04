@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +16,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+// my first endpoint API version 1
+
+// Route::get('greetings', function(){
+//   return "Hello World";
+// });
+
+// version 2 in JSON
+
+Route::get('greetings', function(){
+  return response()->json([
+    'title' => "Technical test made by Sonia for Tayo",
+    'greeting' => 'Hello',
+    'names' => 'Etienne & Nathan'
+  ], 200);
 });
